@@ -1,122 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>Tumeguard – Smarter Discord Moderation</title>
-  <link rel="stylesheet" href="../style.css" />
-  <style>
-    .section {
-      margin-top: 3rem;
-    }
-    .section h2 {
-      margin-bottom: 0.5rem;
-    }
-    .button {
-      display: inline-block;
-      padding: 10px 20px;
-      margin-top: 1rem;
-      background-color: #4a90e2;
-      color: white;
-      text-decoration: none;
-      border-radius: 8px;
-    }
-    .button:hover {
-      background-color: #357bd8;
-    }
-    .fine-print {
-      font-size: 0.9rem;
-      color: #555;
-      margin-top: 2rem;
-      text-align: center;
-    }
-  </style>
+    <meta charset="UTF-8" />
+    <meta http-equiv="refresh" content="0; url=https://tumeden.dev/bots/tumeguard" />
+    <title>Tumeguard – Redirecting...</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+            line-height: 1.6;
+        }
+        .message {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        a {
+            color: #4a90e2;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
-  <div style="max-width: 900px; margin: 1.5rem auto; text-align: center; font-weight: 500;">
-    <div style="background-color: #f8d7da; border: 1px solid #f5c6cb; padding: 14px 18px; border-radius: 6px; color: #721c24;">
-      🔒 Tumeguard is only available in servers where Tumeden is present. 🔒
+    <div class="message">
+        <h1>👋 Page Relocated</h1>
+        <p>This page has moved to our new home at:</p>
+        <p><a href="https://tumeden.dev/bots/tumeguard">https://tumeden.dev/bots/tumeguard</a></p>
+        <p>You should be redirected automatically in a few seconds. If not, please click the link above.</p>
     </div>
-    <div style="background-color: #fff3cd; border: 1px solid #ffeeba; padding: 12px 18px; border-radius: 6px; color: #856404; margin-top: 0.75rem;">
-      If the bot joins a server without Tumeden, it will automatically remove itself. Tumeguard is currently in closed live testing — limited to environments where Tumeden is actively present to monitor behavior, fine-tune performance, and ensure stability. Broader availability may be considered in the future once core systems are proven and hardened.
-    </div>
-  </div>
-  
-  
-  
-  
-  <div class="container">
-    <h1>🛡️ Meet Tumeguard</h1>
-    <p><strong>Smart. Silent. Secure.</strong> Tumeguard is a next-gen moderation bot for Discord that blends real-time protection with low-maintenance automation. Ideal for server owners who want peace of mind without micromanaging moderation tools.</p>
-
-    <h2>🔒 Keep Your Server Safe</h2>
-    <ul>
-      <li>🧠 Filters out toxic, harmful, or inappropriate messages</li>
-      <li>🕵️‍♂️ Blocks scam and phishing links before users click them</li>
-      <li>🚫 Catches Discord invites that lead to suspicious or shady communities</li>
-      <li>🌐 Detects links to adult websites and known NSFW content</li>
-    </ul>
-
-    <h2>🚀 Automatic Cleanup</h2>
-    <ul>
-      <li>🧹 Tumeguard automatically deletes <strong>its own bot messages</strong> (like alerts or command replies) after 30 seconds to keep chat clean</li>
-      <li>🔁 Detects users sending the <strong>same message across multiple channels</strong> — often a sign of spam bots posting invites — and times them out instantly</li>
-      <li>⏱️ Automatically applies slowmode in fast moving channels, and returns it to normal when things calm down.</li>
-    </ul>
-
-    <p><strong>✨ Tumeguard protects your community so you can focus on building it.</strong></p>
-    
-    <div class="section">
-      <h2>🔧 Behind the Scenes</h2>
-      <p>Tumeguard isn’t just smart — it’s <em>thoughtful</em> about how it protects your community.</p>
-      <ul>
-        <li><strong>AI Message Filtering:</strong> Messages are scanned in real-time using powerful AI models to catch hate speech, bullying, and other toxic behavior before it spreads.</li>
-        <li><strong>Dangerous Link Detection:</strong> Suspicious URLs are checked against up-to-date threat databases to prevent phishing, malware, and scams from reaching your users.</li>
-        <li><strong>Invite Link Scanning:</strong> If a Discord invite points to a harmful server, Tumeguard catches it before your members wander in.</li>
-        <li><strong>Fallback Protection:</strong> If external checks fail, a local backup system still reviews messages for bad intent — so coverage never drops.</li>
-      </ul>
-    </div>
-
-    <div class="section">
-      <h2>🌐 What Tech Does Tumeguard Use?</h2>
-      <ul>
-        <li><strong>🔍 Perspective API:</strong> Google's content analysis engine. It scores how toxic, aggressive, or harmful a message is, helping prevent abuse before it spreads.</li>
-        <li><strong>🛑 Safe Browsing:</strong> Maintained by Google, this API checks if a URL is known to host malware, scams, or phishing attempts.</li>
-        <li><strong>🕸️ Web Risk:</strong> A broader threat database that flags risky or deceptive websites before users can interact with them.</li>
-        <li><strong>⚙️ Sentiment (fallback):</strong> If Google’s APIs are unreachable, Tumeguard uses a local sentiment analysis library to maintain basic protection.</li>
-        <li><strong>📡 Built with discord.js on Node.js:</strong> Tumeguard is powered by Node.js and uses `discord.js` to interact with Discord — reading messages, replying to commands, and performing moderation actions.</li>
-        <li><strong>🔁 Sharding support:</strong> For large-scale operation, Tumeguard can split itself across multiple processes (shards) to handle many servers efficiently and reliably.</li>
-      </ul>
-      <p><em>Only message content is ever sent to external services. User IDs and usernames are used locally for moderation logic and never shared with third parties.</em></p>
-    </div>
-    
-    
-    
-
-    <div class="section">
-      <h2>🔐 Permissions & Scopes Explained</h2>
-      <p>When you invite Tumeguard, Discord will ask for a few permissions. Here's what they mean — and what they <strong>don’t</strong> do:</p>
-      <ul>
-        <li><strong>applications.commands</strong> – Enables slash commands like <code>/ping</code> or <code>/timeout</code></li>
-        <li><strong>bot</strong> – Grants the bot access to join your server and operate as a member</li>
-      </ul>
-      <p>Once installed, Tumeguard requests only the following <strong>channel-level permissions</strong>:</p>
-      <ul>
-        <li><strong>View Messages</strong> – Needed to analyze what’s being sent</li>
-        <li><strong>Send Messages</strong> – For alerts, moderation feedback, or slash command responses</li>
-        <li><strong>Manage Messages</strong> – To delete filtered messages or detected spam</li>
-        <li><strong>Manage Channels</strong> – Used to toggle slowmode on/off when spam is detected, auto-creation of tumeguards log channel</li>
-        <li><strong>Read Message History</strong> – So it can reference the most recent messages during spam analysis</li>
-        <li><strong>Moderate Members</strong> – Used only to apply temporary timeouts (no kicks or bans)</li>
-      </ul>
-      <p><strong>Tumeguard does not request Admin permissions, Kick, Ban, or Role Management access.</strong></p>
-    </div>
-    <p><a href="https://discord.com/oauth2/authorize?client_id=1295887768412487681&scope=bot+applications.commands&permissions=1101659204624" class="button">📩 Invite Tumeguard to Your Server</a></p>
-    <p class="fine-print">
-      Curious how we handle data or what the bot can see?<br />
-      You’re welcome to read the <a href="privacy.html">Privacy Policy</a> or <a href="terms.html">Terms of Service</a> for more info.
-    </p>
-
-    
-  </div>
 </body>
 </html>
